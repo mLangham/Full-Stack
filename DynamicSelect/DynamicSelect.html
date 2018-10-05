@@ -1,0 +1,64 @@
+<!--
+// Title   : Dynamic Select
+// File    : DynamicSelect.html
+// Author  : M. Langham
+// Date    : 2018/10/04
+// Version : 1.0.0
+// Purpose : Full-stack web form example. 
+			 After choosing an option from the first select,
+			 the database is queried and the second select is
+			 loaded with options dependant on the first
+			 selected value.
+			 Using jQuery, this can be done without refreshing
+			 the page.
+-->
+
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>Scooter Looters - Dynamic Select</title>
+	<link href="http://www.scooterlooters.com/sandbox/DynamicSelect/DynamicSelect.css" rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src='http://scooterlooters.com/sandbox/DynamicSelect/DynamicSelect.js'></script>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<a href='../sandbox.php'><-- back</a><br>
+
+	<h2>Dynamic Select</h2>
+	<p>After choosing an option from the first select menu, the database is queried and<br> 
+	the second select menu is loaded with options dependant on the first selected value.</p>
+	<p>Using jQuery, this can be done without refreshing the page.</p>
+
+	<br>
+
+	<form>
+
+		<label for='select1'>Select #1</label><br>
+		<select id='select1'>
+			<option value='null'>- select -</option>
+        	<option value='Honda'>Honda</option>
+        	<option value='Kawasaki'>Kawasaki</option>
+        	<option value='Suzuki'>Suzuki</option>
+        	<option value='Yamaha'>Yamaha</option>
+        </select>
+
+        <br><br>
+
+		<label for='select2'>Select #2</label><br>
+        <select id='select2' disabled>
+            <option value='null'>- select -</option>
+        </select>
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
